@@ -26,6 +26,7 @@
     $("#story_#{@story.id}_form")
       .bind('ajax:complete', function() {
         $('#story_#{@story.id}_form').slideUp();
+        $('#story_#{@story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, @story)}');
       });
   });
   });

@@ -51,8 +51,7 @@ class TasksController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.find(params[:story_id])
     @task = @story.tasks.build(params[:task])
-    
-
+   
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: 'Task was successfully created.' }
