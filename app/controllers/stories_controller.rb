@@ -46,6 +46,7 @@ class StoriesController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.build(params[:story])
     @story.story_type_id = @story_type.id
+    @story.author = current_user
 
     respond_to do |format|
       if @story.save

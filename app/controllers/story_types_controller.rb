@@ -45,7 +45,7 @@ class StoryTypesController < ApplicationController
 
     respond_to do |format|
       if @story_type.save
-        format.html { redirect_to @story_type, notice: 'Story type was successfully created.' }
+        format.html { redirect_to story_types_path, notice: 'Story type was successfully created.' }
         format.json { render json: @story_type, status: :created, location: @story_type }
       else
         format.html { render action: "new" }

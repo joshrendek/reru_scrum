@@ -1,8 +1,12 @@
 class TasksController < ApplicationController
+  layout nil
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @tasks = @story.tasks
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,6 +28,9 @@ class TasksController < ApplicationController
   # GET /tasks/new
   # GET /tasks/new.json
   def new
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
     @task = Task.new
 
     respond_to do |format|
@@ -40,7 +47,11 @@ class TasksController < ApplicationController
   # POST /tasks
   # POST /tasks.json
   def create
-    @task = Task.new(params[:task])
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @task = @story.tasks.build(params[:task])
+    
 
     respond_to do |format|
       if @task.save

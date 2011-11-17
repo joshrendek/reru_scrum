@@ -1,5 +1,5 @@
-%h1 Listing story_types
-
+%h1.left Listing Story Types
+.right= link_to 'New Story type', new_story_type_path, :class => "btn success"
 %table
   %tr
     %th Name
@@ -16,4 +16,3 @@
 
 %br
 
-= link_to 'New Story type', new_story_type_path

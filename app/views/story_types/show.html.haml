@@ -4,8 +4,10 @@
 .clear
 
 - @project.stories.each do |story|
-  %h3.left=story.name
-  .right=story.author.email
+  .add.left=link_to "+", "#", :class => "btn success add", :id => "story_#{story.id}", :story_id => story.id, :project_id => @project.id, :story_type_id => @story_type.id
+  %h3.left.story_name=story.name
+  %span.label.right=story.created_at
+  %div{:id => "story_#{story.id}_loader"}
   - story.tasks.order('id desc').each do |task|
     =task.description
-
+  .clear

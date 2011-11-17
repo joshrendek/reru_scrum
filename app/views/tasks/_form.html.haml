@@ -1,25 +1,31 @@
-= form_for @task do |f|
-  -if @task.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@task.errors.count, "error")} prohibited this task from being saved:"
-      %ul
-        - @task.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :area
-    = f.text_field :area
-  .field
-    = f.label :description
-    = f.text_area :description
-  .field
-    = f.label :status_id
-    = f.number_field :status_id
-  .field
-    = f.label :grabbed_by
-    = f.number_field :grabbed_by
-  .field
-    = f.label :story_id
-    = f.number_field :story_id
-  .actions
-    = f.submit 'Save'
+.task_form
+  = simple_form_for [@project, @story_type, @story, @task], :html => {:class => "form-stacked",:id => "story_#{@story.id}_form"},  :remote => true do |f|
+    -if @task.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@task.errors.count, "error")} prohibited this task from being saved:"
+        %ul
+          - @task.errors.full_messages.each do |msg|
+            %li= msg
+    %table
+      %tr
+        %th Area
+        %th{:width => "100%"} Description
+        %th Status
+        %th 
+      %tr
+        %td
+          = f.input_field :area
+        %td
+          = f.input_field :description
+        %td
+          = f.select :status_id, Status.all.map {|s| [s.name, s.id] }, :include_blank => false
+        %td= f.button :submit, :class => "btn primary"
+:javascript
+  jQuery(function($) {
+  $(document).ready(function() {
+    $("#story_#{@story.id}_form")
+      .bind('ajax:complete', function() {
+        $('#story_#{@story.id}_form').slideUp();
+      });
+  });
+  });
