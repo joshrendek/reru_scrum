@@ -1,0 +1,19 @@
+%h1 Listing story_types
+
+%table
+  %tr
+    %th Name
+    %th
+    %th
+    %th
+
+  - @story_types.each do |story_type|
+    %tr
+      %td= story_type.name
+      %td= link_to 'Show', story_type
+      %td= link_to 'Edit', edit_story_type_path(story_type)
+      %td= link_to 'Destroy', story_type, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Story type', new_story_type_path

@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Area:
+  = @task.area
+%p
+  %b Description:
+  = @task.description
+%p
+  %b Status:
+  = @task.status_id
+%p
+  %b Grabbed by:
+  = @task.grabbed_by
+%p
+  %b Story:
+  = @task.story_id
+
+= link_to 'Edit', edit_task_path(@task)
+\|
+= link_to 'Back', tasks_path

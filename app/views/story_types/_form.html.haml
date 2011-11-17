@@ -1,0 +1,12 @@
+%div.small_container
+  = simple_form_for @story_type, :html => {:class => "big_form"} do |f|
+    -if @story_type.errors.any?
+      .alert-message.block-message.error
+        %p= "#{pluralize(@story_type.errors.count, "error")} prohibited this story_type from being saved:"
+        %ul
+          - @story_type.errors.full_messages.each do |msg|
+            %li= msg
+
+    %div= f.input_field :name
+    %br
+    %div= f.button :submit, :class => "btn primary"

@@ -1,0 +1,23 @@
+==
+- Story Types
+    + Parking Lot
+    + Sprint
+- Project
+    - Story
+        + has_many Tasks
+        + has_one StoryType
+    - Task
+        + Area
+        + Description
+        + Status
+        + Grabbed By (who's working on it)
+        + belongs_to Story
+        + has_many Comments
+    - Comments
+        + belongs_to Task
+    - Status
+        + Verify
+        + In Progress
+        + Invalid
+        + Completed but not pushed
+        + Completed

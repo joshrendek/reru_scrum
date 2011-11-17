@@ -1,0 +1,15 @@
+%div{:id => "projects"}
+  %h1.left Listing projects
+  = link_to 'New Project', new_project_path, :class => "btn success right"
+
+  %table
+    %tr
+      %th Name
+
+
+    - @projects.each do |project|
+      %tr
+        %td
+          %h3= link_to project.name, project
+
+  %br

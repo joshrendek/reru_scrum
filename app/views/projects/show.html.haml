@@ -1,0 +1,4 @@
+%h1= @project.name
+
+- StoryType.all.each do |s|
+  =link_to s.name, project_story_type_path(@project, s), :class => "btn primary big_links"

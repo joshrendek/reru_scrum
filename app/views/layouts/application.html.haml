@@ -1,0 +1,28 @@
+%html
+  %head
+    %title ReruScrum
+    = stylesheet_link_tag "application", "bootstrap"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %div{:class => "topbar"}
+      %div{:class => "topbar-inner"}
+        %div{:class => "container"}
+          %h3
+            = link_to "ReruScrum", "/"
+          %ul
+            %li= link_to "Home", "/"
+            - if current_user
+              %li= link_to "Projects", projects_path
+              %li= link_to "Story Types", story_types_path
+
+          %div{:id => "auth"}
+            %ul
+              - if current_user
+                %li= link_to "Logout", destroy_user_session_path, :method => :delete
+              - else
+                %li= link_to "Sign In", new_user_session_path
+    - flash.each do |name, msg|
+      = content_tag :div, raw("<p><center>" + msg + "</center></p>"), :class => "alert-message #{name}"
+    %div{:align => :center}
+      = yield

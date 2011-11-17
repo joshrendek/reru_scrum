@@ -1,0 +1,11 @@
+%h2.left= @story_type.name
+%div.right= link_to "New Story", new_project_story_type_story_path(@project, @story_type), :class => "btn primary"
+
+.clear
+
+- @project.stories.each do |story|
+  %h3.left=story.name
+  .right=story.author.email
+  - story.tasks.order('id desc').each do |task|
+    =task.description
+

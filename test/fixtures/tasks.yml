@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  area: MyString
+  description: MyText
+  status_id: 1
+  grabbed_by: 1
+  story_id: 1
+
+two:
+  area: MyString
+  description: MyText
+  status_id: 1
+  grabbed_by: 1
+  story_id: 1
