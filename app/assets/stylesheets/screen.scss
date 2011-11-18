@@ -89,6 +89,11 @@ td {
 
 .tasks {
     padding-left: 15px !important;
+    form {
+        .input {
+            margin-left: 0px !important;
+        }
+    }
 }
 .small_th {
     th {

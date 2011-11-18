@@ -12,7 +12,9 @@
         - @tasks.where(:area => a).each do |task|
           %tr{:id => "task_#{task.id}_row"}
             %td= task.description
-            %td= task.status.name
+            %td
+              = simple_form_for task, :remote => true, :format => :js do |f|
+                = f.association :status, :label => false, :include_blank => false, :input_html => {:onchange=>'this.form.submit();' }
             %td= task.grabbed_by
             %td= link_to 'Edit', edit_task_path(task)
             %td= link_to 'Destroy', task, :method => :delete, :remote => true, :id => "task_#{task.id}"
