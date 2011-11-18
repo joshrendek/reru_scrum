@@ -7,6 +7,7 @@ class TasksController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.find(params[:story_id])
     @tasks = @story.tasks
+    @areas = @tasks.select('DISTINCT area').collect{ |a| a.area }
 
     respond_to do |format|
       format.html # index.html.erb

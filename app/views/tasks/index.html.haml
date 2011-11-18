@@ -1,29 +1,28 @@
 .clear
-%table
-  %tr
-    %th{:width => "15%"} Area
-    %th{:width => "65%"} Description
-    %th Status
-    %th{:width => "10%"} Grabbed by
-    %th
-    %th
+  - @areas.each do |a|
+    %div.left.biglabel=a
+    .tasks
+      %table
+        %tr.small_th
+          %th{:width => "65%"} Description
+          %th Status
+          %th{:width => "10%"} Grabbed by
+          %th
+          %th
+        - @tasks.where(:area => a).each do |task|
+          %tr{:id => "task_#{task.id}_row"}
+            %td= task.description
+            %td= task.status.name
+            %td= task.grabbed_by
+            %td= link_to 'Edit', edit_task_path(task)
+            %td= link_to 'Destroy', task, :method => :delete, :remote => true, :id => "task_#{task.id}"
 
-  - @tasks.each do |task|
-    %tr{:id => "task_#{task.id}_row"}
-      %td
-        %span.label.success=task.area
-      %td= task.description
-      %td= task.status.name
-      %td= task.grabbed_by
-      %td= link_to 'Edit', edit_task_path(task)
-      %td= link_to 'Destroy', task, :method => :delete, :remote => true, :id => "task_#{task.id}"
-
-    :javascript
-      jQuery(function($) {
-        $(document).ready(function() {
-          $("#task_#{task.id}")
-            .bind('ajax:complete', function() {
-              $('#task_#{task.id}_row').fadeOut();
+          :javascript
+            jQuery(function($) {
+              $(document).ready(function() {
+                $("#task_#{task.id}")
+                  .bind('ajax:complete', function() {
+                    $('#task_#{task.id}_row').fadeOut();
+                  });
+              });
             });
-        });
-      }); 
