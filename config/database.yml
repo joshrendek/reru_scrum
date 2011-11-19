@@ -38,5 +38,5 @@ production:
   database: reru_scrum
   pool: 5
   username: root
-  password:
+  password: test
   socket: /tmp/mysql.sock
