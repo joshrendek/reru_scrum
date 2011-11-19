@@ -6,7 +6,7 @@
         %tr.small_th
           %th{:width => "65%"} Description
           %th Status
-          %th{:width => "10%"} Grabbed by
+          %th{:width => "15%"} Grabbed by
           %th
           %th
         - @tasks.where(:area => a).each do |task|
@@ -18,7 +18,7 @@
 
             %td
               = form_for task, :html => {:id => "task_#{task.id}_grabbed_by"} do |f|
-                = collection_select('task', 'grabbed_by', User.all, :id, :email, {:prompt => true, :selected => task.grabbed_by.try(:id)}, {:class => "small_select", :id => "task_#{task.id}_grabbed_by_select"})
+                = collection_select('task', 'grabbed_by_attributes', User.all, :id, :email, {:prompt => true, :selected => task.grabbed_by}, {:class => "small_select", :id => "task_#{task.id}_grabbed_by_select"})
 
             %td= link_to 'Edit', 'javascript:void(0);', :class => "btn", :id => "task_#{task.id}_edit_button"
             %td= link_to 'Destroy', task, :method => :delete, :confirm => "Are you sure?", :remote => true, :id => "task_#{task.id}", :class => "btn error"
@@ -29,6 +29,20 @@
                 $("#task_#{task.id}_edit_button").bind('click', function() {
                   $("#task_#{task.id}_edit").load('#{edit_project_story_type_story_task_path(@project, @story_type, @story, task)}');
                 });
+
+                $("#task_#{task.id}_grabbed_by_select").bind("change", function() {
+                  $.ajax({
+                    type: "PUT",
+                    url: '#{project_story_type_story_task_path(@project, @story_type, @story, task)}',
+                    data: 'task[grabbed_by]=' + $('#task_#{task.id}_grabbed_by_select').val(),
+                    complete: function() {
+                      $('#task_#{task.id}_grabbed_by').prepend("<span id='task_#{task.id}_grabbed_by_success' class='label success right'>SAVED</span>");
+                      $('#task_#{task.id}_grabbed_by_success').delay(500).fadeOut();
+
+                    }
+                  });
+
+                 })
 
                 $("#task_#{task.id}_status_select").bind("change", function() {
                   $.ajax({
@@ -42,7 +56,7 @@
                     }
                   });
 
-                 })
+                 });
 
                 $("#task_#{task.id}")
                   .bind('ajax:complete', function() {

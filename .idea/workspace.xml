@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071f87c1-540b-4108-8b2c-e40d06fb36ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/task.rb" afterPath="$PROJECT_DIR$/app/models/task.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statuses/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/statuses/_form.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statuses/index.html.haml" afterPath="$PROJECT_DIR$/app/views/statuses/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/story_types/index.html.haml" afterPath="$PROJECT_DIR$/app/views/story_types/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/_form.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
     </list>
     <ignored path="reru_scrum.iws" />
@@ -61,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="250" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
+            <state line="19" column="69" selection-start="781" selection-end="781" vertical-scroll-proportion="0.30309072">
               <folding />
             </state>
           </provider>
@@ -82,16 +74,16 @@
       <file leaf-file-name="task.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/task.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="185" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="2" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="26" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.58524424">
+            <state line="90" column="240" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,15 +93,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/statuses/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="12" column="186" selection-start="440" selection-end="440" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/statuses/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="57" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,9 +134,9 @@
         <option value="$PROJECT_DIR$/app/views/statuses/index.html.haml" />
         <option value="$PROJECT_DIR$/app/views/statuses/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" />
         <option value="$PROJECT_DIR$/app/models/task.rb" />
         <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" />
       </list>
     </option>
   </component>
@@ -914,16 +897,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/stories/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="185" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+        <state line="12" column="21" selection-start="0" selection-end="461" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/stories/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="21" selection-start="0" selection-end="461" vertical-scroll-proportion="0.0">
+        <state line="90" column="240" selection-start="2310" selection-end="2310" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/statuses/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="57" selection-start="262" selection-end="262" vertical-scroll-proportion="0.20737787">
           <folding />
         </state>
       </provider>
@@ -935,23 +925,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/statuses/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/models/task.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="57" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+        <state line="2" column="12" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="250" selection-start="528" selection-end="528" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="26" selection-start="2557" selection-end="2557" vertical-scroll-proportion="0.58524424">
+        <state line="19" column="69" selection-start="781" selection-end="781" vertical-scroll-proportion="0.30309072">
           <folding />
         </state>
       </provider>

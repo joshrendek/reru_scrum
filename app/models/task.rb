@@ -1,4 +1,4 @@
 class Task < ActiveRecord::Base
   belongs_to :status
-  belongs_to :grabbed_by, :class_name => "User", :foreign_key => "grabbed_by"
+  belongs_to :user, :class_name => 'User', :primary_key => 'grouped_by'
 end
