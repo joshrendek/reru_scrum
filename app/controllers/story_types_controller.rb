@@ -15,6 +15,7 @@ class StoryTypesController < ApplicationController
   def show
     @project = Project.find(params[:project_id])
     @story_type = StoryType.find(params[:id])
+    @stories = @project.stories.where(:story_type_id => params[:id])
 
     respond_to do |format|
       format.html # show.html.erb

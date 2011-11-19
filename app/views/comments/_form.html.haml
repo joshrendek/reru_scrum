@@ -1,5 +1,5 @@
 %div.small_container.task_form
-  = simple_form_for [@project, @story_type, @story, @task, @comment], :remote => true do |f|
+  = simple_form_for [@project, @story_type, @story, @task, @comment], :remote => true, :html => {:id => "comments_#{@task.id}_form"} do |f|
     -if @comment.errors.any?
       .alert-message.block-message.error
         %p= "#{pluralize(@comment.errors.count, "error")} prohibited this story_type from being saved:"
@@ -12,3 +12,12 @@
       .right= f.button :submit, :class => "btn primary"
     %br
     %br
+:javascript
+  jQuery(function($) {
+  $(document).ready(function() {
+    $("#comments_#{@task.id}_form")
+      .bind('ajax:complete', function() {
+        $('#comments_#{@task.id}_area').load('#{project_story_type_story_task_comments_path(@project, @story_type, @story, @task)}');
+      });
+  });
+  });

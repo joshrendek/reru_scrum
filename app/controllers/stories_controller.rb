@@ -2,7 +2,8 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.all
+    @project = Project.find(params[:project_id])
+    @stories = @project.stories.where(:story_type_id => params[:story_type_id])
 
     respond_to do |format|
       format.html # index.html.erb

@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.find(params[:story_id])
     @task = @story.tasks.find(params[:task_id])
-    @comments = @task.comments
+    @comments = @task.comments.order('id desc')
     @comment = Comment.new
 
     respond_to do |format|
@@ -52,6 +52,7 @@ class CommentsController < ApplicationController
     @story = @project.stories.find(params[:story_id])
     @task = @story.tasks.find(params[:task_id])
     @comment = @task.comments.build(params[:comment])
+    @comment.user_id = current_user.id
 
     respond_to do |format|
       if @comment.save

@@ -36,6 +36,7 @@
                 });
 
                 $('#task_#{task.id}_comments').bind("click", function(){
+                  $('#task_#{task.id}_comments_area').show();
                   $('#task_#{task.id}_comments_area').load('#{project_story_type_story_task_comments_path(@project, @story_type, @story, task)}');
                 });
 

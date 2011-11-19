@@ -1,19 +1,20 @@
-%table
-  %tr
-    %th Description
-    %th Task
-    %th
-    %th
-    %th
+%center
+  %div{:id => "comments_#{@task.id}_area", :class => "comments_scroll"}
+    =link_to raw("<b>^</b> Hide <b>^</b>"), "#", :onclick => "$('#task_#{@task.id}_comments_area').slideUp()", :class => "btn primary"
+    .clear
+    %br
+    - @comments.each do |comment|
+      %div{:id => "comment_#{comment.id}"}
+        %div{:class => "alert-message block-message #{cycle('success', '')} comments"}
+          %div{:class => "left"}= comment.description
+          .clear
+          %small.left=comment.created_at
+          %small
+            %b.right=comment.user.email
+          .clear
 
-  - @comments.each do |comment|
-    %tr
-      %td= comment.description
-      %td= comment.task_id
-      %td= link_to 'Show', comment
-      %td= link_to 'Edit', edit_comment_path(comment)
-      %td= link_to 'Destroy', comment, :confirm => 'Are you sure?', :method => :delete
+      .clear
 
-%br
+    %br
 
-= render 'form'
+    = render 'form'
