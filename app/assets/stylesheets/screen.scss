@@ -75,9 +75,11 @@ td {
   }
 }
 
-.task_status {
+.even {background-color: #efefef; }
+
+.small_select {
     font-size: 12px !important;
-    height: 20px !important;
+    height: auto !important;
     width: auto !important;
 }
 
@@ -98,7 +100,11 @@ td {
     padding-left: 15px !important;
     tr {
         td {
-            padding-left: 0px !important;
+            padding-top:10px !important;
+            padding-left: 5px !important;
+            padding-bottom: 0px !important;
+            border-bottom: 1px solid #efefef !important;
+            margin: 0px !important;
         }
     }
     form {

@@ -1,13 +1,12 @@
-= form_for @status do |f|
-  -if @status.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@status.errors.count, "error")} prohibited this status from being saved:"
-      %ul
-        - @status.errors.full_messages.each do |msg|
-          %li= msg
+%div.small_container
+  = simple_form_for @status, :html => {:class => "big_form"} do |f|
+    -if @status.errors.any?
+      .alert-message.block-message.error
+        %p= "#{pluralize(@status.errors.count, "error")} prohibited this story_type from being saved:"
+        %ul
+          - @status.errors.full_messages.each do |msg|
+            %li= msg
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .actions
-    = f.submit 'Save'
+    %div= f.input_field :name
+    %br
+    %div= f.button :submit, :class => "btn primary"

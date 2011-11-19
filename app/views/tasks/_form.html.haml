@@ -10,7 +10,8 @@
       %tr
         %th Area
         %th{:width => "100%"} Description
-        %th Status
+        - if action_name != 'edit'
+          %th Status
         %th 
       %tr
         %td
