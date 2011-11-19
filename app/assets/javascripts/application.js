@@ -6,9 +6,9 @@
 //
 //= require jquery
 //= require bootstrap-modal
+//= require bootstrap-dropdown
 //= require bootstrap-alerts
 //= require bootstrap-buttons
-//= require bootstrap-dropdown
 //= require bootstrap-tabs
 //= require comments
 //= require projects

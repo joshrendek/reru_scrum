@@ -10,10 +10,15 @@
         %div{:class => "container"}
           %h3
             = link_to "ReruScrum", "/"
-          %ul
+          %ul.nav
             %li= link_to "Home", "/"
             - if current_user
-              %li= link_to "Projects", projects_path
+              %li{:class =>"dropdown", 'data-dropdown' => 'dropdown'}
+                = link_to "Projects", projects_path, :class => "dropdown-toggle"
+                %ul{:class => "dropdown-menu"}
+                  - Project.all.each do |p|
+                    %li= link_to p.name, p
+
               %li= link_to "Story Types", story_types_path
               %li= link_to "Statuses", statuses_path
 
