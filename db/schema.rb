@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111119040756) do
+ActiveRecord::Schema.define(:version => 20111119050213) do
 
   create_table "comments", :force => true do |t|
     t.text     "description"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20111119040756) do
     t.integer  "project_id"
     t.string   "name"
     t.integer  "author_id"
+    t.boolean  "is_open",       :default => true
   end
 
   create_table "story_types", :force => true do |t|

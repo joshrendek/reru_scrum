@@ -6,7 +6,9 @@
 - @stories.each do |story|
   .add.left=link_to "+", "#", :class => "btn success add", :id => "story_#{story.id}", :story_id => story.id, :project_id => @project.id, :story_type_id => @story_type.id
   %h3.left.story_name=story.name
-  %span.label.right=story.created_at
+  %div.right
+    %span.label=story.created_at
+    %div{:id => "story_#{story.id}_is_open_area"}=select('story', 'is_open', [['Open', 1], ['Closed', 0]], {:selected => story.is_open ? 1 : 0 }, {:id => "story_#{story.id}_is_open", :class =>"small_select"})
   .clear
   %hr
   %div{:id => "story_#{story.id}_loader"}
@@ -14,9 +16,35 @@
   %div{:id => "story_#{story.id}_tasks"}
   .clear
 
+  - if story.is_open == true
+    :javascript
+      jQuery(function($) {
+            $(document).ready(function() {
+              $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
+            });
+      });
   :javascript
     jQuery(function($) {
       $(document).ready(function() {
-        $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
+        $("#story_#{story.id}_is_open").bind("change", function() {
+          $.ajax({
+            type: "PUT",
+            url: '#{project_story_type_story_path(@project, @story_type, story)}',
+            data: 'story[is_open]=' + $('#story_#{story.id}_is_open').val(),
+            complete: function() {
+              $('#story_#{story.id}_is_open_area').prepend("<span id='story_#{story.id}_is_open_success' class='label success right'>SAVED</span>");
+              $('#story_#{story.id}_is_open_success').delay(500).fadeOut();
+
+            }
+          });
+
+          if($('#story_#{story.id}_is_open').val() == 1){
+          $('#story_#{story.id}_tasks').slideDown();
+            $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
+          }else{
+            $('#story_#{story.id}_tasks').slideUp();
+          }
+
+        })
       });
     });
