@@ -69,9 +69,16 @@ td {
   th, td {
     padding: {
       top: 1px;
-      bottom: 0px; 
+      bottom: 0px;
     }
+
   }
+}
+
+.task_status {
+    font-size: 12px !important;
+    height: 20px !important;
+    width: auto !important;
 }
 
 .biglabel {
@@ -89,6 +96,11 @@ td {
 
 .tasks {
     padding-left: 15px !important;
+    tr {
+        td {
+            padding-left: 0px !important;
+        }
+    }
     form {
         .input {
             margin-left: 0px !important;

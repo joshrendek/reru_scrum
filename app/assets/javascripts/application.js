@@ -5,4 +5,15 @@
 // the compiled file.
 //
 //= require jquery
-//= require_tree .
+//= require bootstrap-alerts
+//= require bootstrap-buttons
+//= require bootstrap-dropdown
+//= require bootstrap-modal
+//= require bootstrap-tabs
+//= require comments
+//= require projects
+//= require statuses
+//= require stories
+//= require story_types
+//= require tasks
+
