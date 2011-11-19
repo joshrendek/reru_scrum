@@ -5,10 +5,10 @@
 // the compiled file.
 //
 //= require jquery
+//= require bootstrap-modal
 //= require bootstrap-alerts
 //= require bootstrap-buttons
 //= require bootstrap-dropdown
-//= require bootstrap-modal
 //= require bootstrap-tabs
 //= require comments
 //= require projects

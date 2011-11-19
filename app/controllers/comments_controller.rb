@@ -1,8 +1,15 @@
 class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
+
+  layout nil
   def index
-    @comments = Comment.all
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @task = @story.tasks.find(params[:task_id])
+    @comments = @task.comments
+    @comment = Comment.new
 
     respond_to do |format|
       format.html # index.html.erb
@@ -40,7 +47,11 @@ class CommentsController < ApplicationController
   # POST /comments
   # POST /comments.json
   def create
-    @comment = Comment.new(params[:comment])
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @task = @story.tasks.find(params[:task_id])
+    @comment = @task.comments.build(params[:comment])
 
     respond_to do |format|
       if @comment.save

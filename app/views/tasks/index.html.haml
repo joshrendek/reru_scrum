@@ -5,20 +5,25 @@
       %table
         %tr.small_th
           %th{:width => "65%"} Description
-          %th Status
+          %th{:width => "8%"} Status
           %th{:width => "15%"} Grabbed by
           %th
           %th
         - @tasks.where(:area => a).each do |task|
           %tr{:id => "task_#{task.id}_row", :class => cycle('odd', 'even')}
-            %td{:id => "task_#{task.id}_edit"}= task.description
+            %td{:id => "task_#{task.id}_edit"}
+              %span.right.mediumlabel
+                %div= link_to raw(task.comments.size.to_s + image_tag('comments.png', :size => "20x20", :class => "right")), "javascript:void(0);", :id => "task_#{task.id}_comments"
+              %div.left= task.description
+              .clear
+              %div{:id => "task_#{task.id}_comments_area"}
             %td
               = simple_form_for task, :html => {:id => "task_#{task.id}_status"} do |f|
                 = f.association :status, :label => false, :include_blank => false, :input_html => {:class => "small_select", :id => "task_#{task.id}_status_select" }
 
             %td
               = form_for task, :html => {:id => "task_#{task.id}_grabbed_by"} do |f|
-                = collection_select('task', 'grabbed_by_attributes', User.all, :id, :email, {:prompt => true, :selected => task.grabbed_by}, {:class => "small_select", :id => "task_#{task.id}_grabbed_by_select"})
+                = collection_select('task', 'grabbed_by_attributes', User.all, :id, :email, {:prompt => 'No one assigned', :selected => task.grabbed_by}, {:class => "small_select", :id => "task_#{task.id}_grabbed_by_select"})
 
             %td= link_to 'Edit', 'javascript:void(0);', :class => "btn", :id => "task_#{task.id}_edit_button"
             %td= link_to 'Destroy', task, :method => :delete, :confirm => "Are you sure?", :remote => true, :id => "task_#{task.id}", :class => "btn error"
@@ -28,6 +33,10 @@
               $(document).ready(function() {
                 $("#task_#{task.id}_edit_button").bind('click', function() {
                   $("#task_#{task.id}_edit").load('#{edit_project_story_type_story_task_path(@project, @story_type, @story, task)}');
+                });
+
+                $('#task_#{task.id}_comments').bind("click", function(){
+                  $('#task_#{task.id}_comments_area').load('#{project_story_type_story_task_comments_path(@project, @story_type, @story, task)}');
                 });
 
                 $("#task_#{task.id}_grabbed_by_select").bind("change", function() {

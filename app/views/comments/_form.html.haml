@@ -1,16 +1,14 @@
-= form_for @comment do |f|
-  -if @comment.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@comment.errors.count, "error")} prohibited this comment from being saved:"
-      %ul
-        - @comment.errors.full_messages.each do |msg|
-          %li= msg
+%div.small_container.task_form
+  = simple_form_for [@project, @story_type, @story, @task, @comment], :remote => true do |f|
+    -if @comment.errors.any?
+      .alert-message.block-message.error
+        %p= "#{pluralize(@comment.errors.count, "error")} prohibited this story_type from being saved:"
+        %ul
+          - @comment.errors.full_messages.each do |msg|
+            %li= msg
 
-  .field
-    = f.label :description
-    = f.text_area :description
-  .field
-    = f.label :task_id
-    = f.number_field :task_id
-  .actions
-    = f.submit 'Save'
+    %div
+      .left=f.input_field :description
+      .right= f.button :submit, :class => "btn primary"
+    %br
+    %br
