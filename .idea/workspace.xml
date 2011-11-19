@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071f87c1-540b-4108-8b2c-e40d06fb36ad" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/stories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/stories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/story_types/show.html.haml" afterPath="$PROJECT_DIR$/app/views/story_types/show.html.haml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/tasks/index.html.haml" afterPath="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="reru_scrum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/story_types/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="6" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.38285145">
+            <state line="22" column="252" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,10 +97,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="20" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0">
+            <state line="8" column="46" selection-start="226" selection-end="226" vertical-scroll-proportion="0.12761715">
               <folding />
             </state>
           </provider>
@@ -136,9 +133,9 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20111119050213_add_is_open_to_stories.rb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/stories_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/story_types/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
       </list>
     </option>
   </component>
@@ -885,13 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="20" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/story_types_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="242" selection-start="261" selection-end="261" vertical-scroll-proportion="0.14649034">
@@ -936,7 +926,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/story_types/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.38285145">
+        <state line="22" column="252" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tasks/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="46" selection-start="226" selection-end="226" vertical-scroll-proportion="0.12761715">
           <folding />
         </state>
       </provider>
