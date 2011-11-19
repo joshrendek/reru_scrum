@@ -7,7 +7,7 @@ class TasksController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.find(params[:story_id])
     @tasks = @story.tasks
-    @areas = @tasks.select('DISTINCT area').collect{ |a| a.area }
+    @areas = @tasks.select('DISTINCT area').collect { |a| a.area }
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,7 +42,10 @@ class TasksController < ApplicationController
 
   # GET /tasks/1/edit
   def edit
-    @task = Task.find(params[:id])
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @task = @story.tasks.find(params[:id])
   end
 
   # POST /tasks
@@ -52,7 +55,7 @@ class TasksController < ApplicationController
     @story_type = StoryType.find(params[:story_type_id])
     @story = @project.stories.find(params[:story_id])
     @task = @story.tasks.build(params[:task])
-   
+
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: 'Task was successfully created.' }
@@ -67,7 +70,10 @@ class TasksController < ApplicationController
   # PUT /tasks/1
   # PUT /tasks/1.json
   def update
-    @task = Task.find(params[:id])
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:story_type_id])
+    @story = @project.stories.find(params[:story_id])
+    @task = @story.tasks.find(params[:id])
 
     respond_to do |format|
       if @task.update_attributes(params[:task])

@@ -11,17 +11,21 @@
           %th
         - @tasks.where(:area => a).each do |task|
           %tr{:id => "task_#{task.id}_row"}
-            %td= task.description
+            %td{:id => "task_#{task.id}_edit"}= task.description
             %td
               = simple_form_for task, :remote => true, :format => :js, :html => {:id => "task_#{task.id}_status"} do |f|
                 = f.association :status, :label => false, :include_blank => false, :input_html => {:class => "task_status", :id => "task_#{task.id}_status_select" }
             %td= task.grabbed_by
-            %td= link_to 'Edit', edit_task_path(task), :class => "btn"
+            %td= link_to 'Edit', 'javascript:void(0);', :class => "btn", :id => "task_#{task.id}_edit_button"
             %td= link_to 'Destroy', task, :method => :delete, :confirm => "Are you sure?", :remote => true, :id => "task_#{task.id}", :class => "btn error"
 
           :javascript
             jQuery(function($) {
               $(document).ready(function() {
+                $("#task_#{task.id}_edit_button").bind('click', function() {
+                  $("#task_#{task.id}_edit").load('#{edit_project_story_type_story_task_path(@project, @story_type, @story, task)}');
+                });
+
                 $("#task_#{task.id}_status_select").bind("change", function() {
                   $.ajax({
                     type: "PUT",

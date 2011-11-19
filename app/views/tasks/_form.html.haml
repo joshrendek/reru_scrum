@@ -18,7 +18,8 @@
         %td
           = f.input_field :description
         %td
-          = f.select :status_id, Status.all.map {|s| [s.name, s.id] }, :include_blank => false
+          - if action_name != 'edit'
+            = f.select :status_id, Status.all.map {|s| [s.name, s.id] }, :include_blank => false
         %td= f.button :submit, :class => "btn primary"
 :javascript
   jQuery(function($) {
