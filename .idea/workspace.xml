@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071f87c1-540b-4108-8b2c-e40d06fb36ad" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/bootstrap-scrollspy.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
     </list>
     <ignored path="reru_scrum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,7 +91,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="0.22787386">
+            <state line="7" column="22" selection-start="443" selection-end="443" vertical-scroll-proportion="0.11393693">
               <folding />
             </state>
           </provider>
@@ -1007,7 +1002,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="23" selection-start="617" selection-end="617" vertical-scroll-proportion="0.22787386">
+        <state line="7" column="22" selection-start="443" selection-end="443" vertical-scroll-proportion="0.11393693">
           <folding />
         </state>
       </provider>

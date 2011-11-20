@@ -5,6 +5,7 @@
 // the compiled file.
 //
 //= require jquery
+//= require jquery_ujs
 //= require bootstrap-dropdown
 //= require bootstrap-alerts
 //= require bootstrap-buttons
