@@ -13,6 +13,12 @@ git pull; git push heroku master
 heroku rake db:migrate
 
 
+== Working locally
+rm -rf public/assets/*
+
+Before deploying again:
+rake assets:precompile:all
+
 == License
 Copyright (c) 2011 Josh Rendek
 

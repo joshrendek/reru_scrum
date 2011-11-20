@@ -3173,32 +3173,42 @@ td {
 /* line 60, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .add {
   margin-top: 2px;
+  padding-top: 3px !important;
+  padding-left: 7px !important;
+  padding-right: 7px !important;
+  padding-bottom: 3px !important;
 }
 
-/* line 65, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 72, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .task_form textarea {
   width: 100%;
   height: 40px;
 }
-/* line 69, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 76, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .task_form th, .task_form td {
   padding-top: 1px;
   padding-bottom: 0px;
 }
 
-/* line 78, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 85, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+.story_item_header {
+  height: 30px;
+  overflow: hidden;
+}
+
+/* line 90, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .even {
   background-color: #efefef;
 }
 
-/* line 80, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 92, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .small_select {
   font-size: 12px !important;
   height: auto !important;
   width: auto !important;
 }
 
-/* line 86, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 98, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .biglabel {
   color: #46A546;
   font-weight: bold;
@@ -3212,7 +3222,7 @@ td {
   padding-right: 100px !important;
 }
 
-/* line 99, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 111, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .mediumlabel {
   font-size: 14px !important;
   padding: 4px !important;
@@ -3220,48 +3230,48 @@ td {
   font-weight: bold;
 }
 
-/* line 106, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 118, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .tasks {
   padding-left: 15px !important;
 }
-/* line 109, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
-.tasks tr td {
+/* line 121, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+.tasks * td {
   padding-top: 10px !important;
   padding-left: 5px !important;
   padding-bottom: 0px !important;
   border-bottom: 1px solid #efefef !important;
   margin: 0px !important;
 }
-/* line 118, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 130, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .tasks form .input {
   margin-left: 0px !important;
 }
 
-/* line 124, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 136, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .small_th th {
   padding: 0px !important;
   border: 0 !important;
 }
 
-/* line 130, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 142, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 hr {
   margin: 6px 0 5px !important;
 }
 
-/* line 134, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 146, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .comments {
   width: 50% !important;
 }
 
-/* line 138, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 150, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .dropdown-menu {
   background-color: #066dab !important;
 }
-/* line 141, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 153, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .dropdown-menu li a {
   color: #fff !important;
 }
-/* line 142, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
+/* line 154, /Users/joshrendek/apps/reru_scrum/app/assets/stylesheets/screen.scss */
 .dropdown-menu li a:hover {
   background: #08456B !important;
 }
