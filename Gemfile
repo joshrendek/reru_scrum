@@ -6,7 +6,7 @@ gem 'rails', '3.1.1'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
-
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -38,6 +38,5 @@ gem 'simple_form'
 gem 'active_reload', :group => :development
 gem 'devise'
 gem 'haml'
-gem 'rails-backbone'
 gem 'sass'
 gem 'haml-rails'
