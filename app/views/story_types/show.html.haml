@@ -16,13 +16,14 @@
   %div{:id => "story_#{story.id}_tasks"}
   .clear
 
+  - if story.is_open == 1
+    :javascript
+      jQuery(function($) {
+            $(document).ready(function() {
+              $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
+            });
+      });
   :javascript
-    jQuery(function($) {
-          $(document).ready(function() {
-            $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
-          });
-    });
-
     jQuery(function($) {
       $(document).ready(function() {
         $("#story_#{story.id}_is_open").bind("change", function() {
