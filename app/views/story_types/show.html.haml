@@ -8,7 +8,7 @@
   %h3.left.story_name=story.name
   %div.right
     %span.label=story.created_at
-    %div{:id => "story_#{story.id}_is_open_area"}=select('story', 'is_open', [['Open', 1], ['Closed', 0]], {:selected => story.is_open ? 1 : 0 }, {:id => "story_#{story.id}_is_open", :class =>"small_select"})
+    %div{:id => "story_#{story.id}_is_open_area"}=select('story', 'is_open', [['Open', 1], ['Closed', 0]], {:selected => story.is_open }, {:id => "story_#{story.id}_is_open", :class =>"small_select"})
   .clear
   %hr
   %div{:id => "story_#{story.id}_loader"}
@@ -20,9 +20,6 @@
     jQuery(function($) {
           $(document).ready(function() {
             $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
-            if($('#story_#{story.id}_is_open').val() == 0){
-              $('#story_#{story.id}_tasks').slideUp();
-          }
           });
     });
 
