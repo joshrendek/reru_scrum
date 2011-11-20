@@ -5,11 +5,9 @@
 // the compiled file.
 //
 //= require jquery
-//= require bootstrap-modal
 //= require bootstrap-dropdown
 //= require bootstrap-alerts
 //= require bootstrap-buttons
-//= require bootstrap-tabs
 //= require comments
 //= require projects
 //= require statuses
