@@ -2,65 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="071f87c1-540b-4108-8b2c-e40d06fb36ad" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-029c6aa1a03aeb9e057935daecb34390.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-029c6aa1a03aeb9e057935daecb34390.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0eae0dd434aaf56b18730a26bfea6d01.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-0eae0dd434aaf56b18730a26bfea6d01.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1c9609bc58b1e77c196de29021583379.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-1c9609bc58b1e77c196de29021583379.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2d1029e8748bbb82268e4fb0a652e3e9.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-2d1029e8748bbb82268e4fb0a652e3e9.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-48c75964858eee202c9e4b0bd779c7c3.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-48c75964858eee202c9e4b0bd779c7c3.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-dc3e44f6fb5b96fc7f6ceb9835e3ea0e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application-dc3e44f6fb5b96fc7f6ceb9835e3ea0e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/application.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-1fee6309d5914986e42b383e4322067c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-1fee6309d5914986e42b383e4322067c.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-alerts-56fd9c25224a81da49d59064337fec38.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-alerts-56fd9c25224a81da49d59064337fec38.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-alerts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-alerts.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-buttons-1e62ecb35da9465c6e8fbfb9c4e6cd01.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-buttons-1e62ecb35da9465c6e8fbfb9c4e6cd01.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-buttons.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-buttons.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-dropdown-433be6ebdd511895ad75eea1b3242c0a.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-dropdown-433be6ebdd511895ad75eea1b3242c0a.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-dropdown.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-dropdown.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-modal-e83dce784ae1c6c7b1eb63918618e85d.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-modal-e83dce784ae1c6c7b1eb63918618e85d.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-modal.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-modal.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-popover-8f6b4bf41c1db2586184fa773b8f6d9e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-popover-8f6b4bf41c1db2586184fa773b8f6d9e.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-popover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-popover.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-scrollspy-28bfe0dfc44faeddbea238f582f56dc8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-scrollspy-28bfe0dfc44faeddbea238f582f56dc8.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-scrollspy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-scrollspy.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-tabs-0cbda9c9c479beb7a394d2ef6b6d7d81.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-tabs-0cbda9c9c479beb7a394d2ef6b6d7d81.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-tabs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-tabs.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-twipsy-d1f7f0cc3ea8eebeac67e143022a49e7.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-twipsy-d1f7f0cc3ea8eebeac67e143022a49e7.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-twipsy.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap-twipsy.js.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/bootstrap.css.gz" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/comments-d648a96aa75baabdfd1cb924ca92c9be.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/comments.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/manifest.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rails-e4b51606cd77fda2615e7439907bfc92.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/assets/rails.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/story_types/show.html.haml" afterPath="$PROJECT_DIR$/app/views/story_types/show.html.haml" />
     </list>
     <ignored path="reru_scrum.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,25 +28,34 @@
       <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="66" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+            <state line="15" column="178" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/screen.scss">
+      <file leaf-file-name="stories.js.coffee" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stories.js.coffee">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="0" selection-start="3325" selection-end="3325" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.haml">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/story_types/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="136" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/story_types/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="14" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.3958763">
               <folding />
             </state>
           </provider>
@@ -128,10 +79,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.14649034">
+            <state line="12" column="170" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,13 +138,13 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/screen.scss" />
         <option value="$PROJECT_DIR$/db/migrate/20111119050213_add_is_open_to_stories.rb" />
         <option value="$PROJECT_DIR$/app/controllers/stories_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/story_types/show.html.haml" />
         <option value="$PROJECT_DIR$/app/views/tasks/index.html.haml" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/story_types/show.html.haml" />
       </list>
     </option>
   </component>
@@ -336,10 +287,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tasks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -360,90 +307,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="story_types" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statuses" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reru_scrum" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -926,13 +789,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20111119050213_add_is_open_to_stories.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="243" selection-start="133" selection-end="133" vertical-scroll-proportion="0.08138352">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="241" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
@@ -950,13 +806,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/stories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="252" selection-start="268" selection-end="268" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/story_types/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="252" selection-start="990" selection-end="990" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1003,13 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="66" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="186" selection-start="166" selection-end="166" vertical-scroll-proportion="0.0">
@@ -1024,6 +866,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="170" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="178" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/stories.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1031,9 +887,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/views/story_types/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="464" selection-end="464" vertical-scroll-proportion="0.14649034">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/story_types/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.3958763">
           <folding />
         </state>
       </provider>

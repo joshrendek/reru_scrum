@@ -16,14 +16,16 @@
   %div{:id => "story_#{story.id}_tasks"}
   .clear
 
-  - if story.is_open == true
-    :javascript
-      jQuery(function($) {
-            $(document).ready(function() {
-              $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
-            });
-      });
   :javascript
+    jQuery(function($) {
+          $(document).ready(function() {
+            $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
+            if($('#story_#{story.id}_is_open').val() == 0){
+              $('#story_#{story.id}_tasks').slideUp();
+          }
+          });
+    });
+
     jQuery(function($) {
       $(document).ready(function() {
         $("#story_#{story.id}_is_open").bind("change", function() {
@@ -39,7 +41,7 @@
           });
 
           if($('#story_#{story.id}_is_open').val() == 1){
-          $('#story_#{story.id}_tasks').slideDown();
+            $('#story_#{story.id}_tasks').slideDown();
             $('#story_#{story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, story)}');
           }else{
             $('#story_#{story.id}_tasks').slideUp();
