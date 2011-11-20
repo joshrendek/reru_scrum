@@ -117,19 +117,27 @@ td {
 
 .tasks {
     padding-left: 15px !important;
-    * {
-        td {
-            padding-top:10px !important;
-            padding-left: 5px !important;
-            padding-bottom: 0px !important;
-            border-bottom: 1px solid #efefef !important;
-            margin: 0px !important;
-        }
+    td {
+        padding-top:10px !important;
+        padding-left: 5px !important;
+        padding-bottom: 0px !important;
+        border-bottom: 1px solid #efefef !important;
+        margin: 0px !important;
+    }
+
+    tr {
+       margin: 0px !important;
+       padding: 0px !important;
     }
     form {
         .input {
             margin-left: 0px !important;
         }
+        margin-bottom: 0px !important;
+    }
+    .btn {
+        padding: 2px !important;
+        margin: 0px !important;
     }
 }
 .small_th {
