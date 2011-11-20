@@ -7,6 +7,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require stories
+//= require bootstrap-dropdown
 
 
 $(document).ajaxSend(function(e, xhr, options) {
