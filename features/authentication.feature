@@ -1,4 +1,4 @@
-Feature: Testing auth
+Feature: Auth testing
 
   Scenario Outline: Creating a new account
     Given I am not authenticated
@@ -14,7 +14,3 @@ Feature: Testing auth
       | testing@man.net | secretpass |
       | foo@bar.com     | fr33z3     |
 
-  Scenario: Creating a project
-    Given I am a new, authenticated user
-    When I press "New Project"
-    Then I should see "New project"

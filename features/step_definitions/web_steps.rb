@@ -217,13 +217,31 @@ Given /^I am not authenticated$/ do
 end
 
 Given /^I am a new, authenticated user$/ do
-  User.destroy_all
   email = 'testing@man.net'
-  password = 'secretpass'
-  User.new(:email => email, :password => password, :password_confirmation => password).save!
+  password = 'secretpass123'
+  @user = User.create(:email => email, :password => password, :password_confirmation => password)
   visit '/users/sign_in'
   fill_in "user_email", :with=>email
   fill_in "user_password", :with=>password
   click_button "Sign in"
+end
 
+Given /^two story types exist$/ do
+  @story_type = StoryType.create(:name => "Sprint")
+  StoryType.create(:name => "Parking Lot")
+end
+
+Given /^a project exists named "([^"]*)"$/ do |name|
+  @project = Project.create(:name => name)
+end
+
+Given /^I am working on the project$/ do
+  visit(project_story_type_path(@project, @story_type))
+end
+
+Given /^a story exists named "([^"]*)"$/ do |name|
+  @story = Story.create(:name => name, :story_type_id => @story_type,
+                        :project_id => @project,
+                        :author_id => @user.id, :is_open => 1)
+  p @story
 end

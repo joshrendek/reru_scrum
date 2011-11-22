@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20111119050213) do
     t.integer  "project_id"
     t.string   "name"
     t.integer  "author_id"
-    t.integer  "is_open",       :default => true, :size => 1
+    t.integer  "is_open",       :default => 1
   end
 
   create_table "story_types", :force => true do |t|
