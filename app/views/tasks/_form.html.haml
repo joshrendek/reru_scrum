@@ -22,6 +22,7 @@
           - if action_name != 'edit'
             = f.select :status_id, Status.all.map {|s| [s.name, s.id] }, :include_blank => false
         %td= f.button :submit, :class => "btn primary"
+        %td= link_to "Cancel", "javascript:void(0);", :class => "btn error", :id => "task_#{@story.id}_cancel"
 :javascript
   jQuery(function($) {
   $(document).ready(function() {
@@ -30,5 +31,8 @@
         $('#story_#{@story.id}_form').slideUp();
         $('#story_#{@story.id}_tasks').load('#{project_story_type_story_tasks_path(@project, @story_type, @story)}');
       });
+    $("#task_#{@story.id}_cancel").bind('click', function() {
+     $('#story_#{@story.id}_form').slideUp();
+   });
   });
   });
