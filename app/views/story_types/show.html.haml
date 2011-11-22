@@ -5,7 +5,7 @@
 
 - @stories.each do |story|
   .story_item_header
-    .add.left=link_to "+", "#", :class => "btn success add", :id => "story_#{story.id}", :story_id => story.id, :project_id => @project.id, :story_type_id => @story_type.id
+    .add.left=link_to "+ task", "#", :class => "btn success add", :id => "story_#{story.id}", :story_id => story.id, :project_id => @project.id, :story_type_id => @story_type.id
     %h3.left.story_name=story.name
     %div.right
       %span.label=story.created_at.strftime("%m/%d/%Y %H:%M %p")
