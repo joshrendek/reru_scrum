@@ -243,5 +243,10 @@ Given /^a story exists named "([^"]*)"$/ do |name|
   @story = Story.create(:name => name, :story_type_id => @story_type,
                         :project_id => @project,
                         :author_id => @user.id, :is_open => 1)
-  p @story
+end
+
+When /^I wait until all Ajax requests are completed$/ do
+  wait_until do
+    page.evaluate_script('$.active') == 0
+  end
 end

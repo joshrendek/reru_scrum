@@ -35,6 +35,7 @@ group :test do
   gem 'cucumber-rails'
   gem 'database_cleaner'
   gem 'capybara'
+  gem "capybara-webkit"  
   gem 'launchy'
 end
 gem 'simple_form'
