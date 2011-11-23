@@ -12,10 +12,11 @@ Go visit your new installation, add some Story Types & Statuses and start SCRUMi
   title   : Your project's website title and header in the top left corner
   allow_registration : 0 to turn off registration, delete or set to 1 to allow
 
-== How to update
-cd reru_scrum
-git pull; git push heroku master
-heroku rake db:migrate
+# How to update
+    
+    cd reru_scrum
+    git pull; git push heroku master
+    heroku rake db:migrate
 
 
 # Working locally
