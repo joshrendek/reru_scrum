@@ -1,6 +1,17 @@
 class TasksController < ApplicationController
   layout nil
 
+  def autocomplete
+    @project = Project.find(params[:project_id])
+    @story_type = StoryType.find(params[:id])
+    @tasks = Task.where("area LIKE ?", "%"+params[:q]+"%")
+    output = ""
+    @tasks.each do |t|
+      output += "#{t.area}|#{t.area}\n"
+    end
+    render :text => output
+  end
+
   # GET /tasks
   # GET /tasks.json
   def index

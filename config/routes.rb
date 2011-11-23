@@ -13,11 +13,14 @@ ReruScrum::Application.routes.draw do
 
   resources :projects do
     resources :story_types do
-       resources :stories do
-         resources :tasks do
-           resources :comments
-         end
-       end
+      member do 
+        get 'autocomplete', :to => "tasks#autocomplete"
+      end
+      resources :stories do
+        resources :tasks do
+          resources :comments
+        end
+      end
     end
   end
 

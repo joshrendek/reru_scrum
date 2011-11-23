@@ -24,8 +24,21 @@
         %td= f.button :submit, :class => "btn primary"
         %td= link_to "Cancel", "javascript:void(0);", :class => "btn error", :id => "task_#{@story.id}_cancel"
 :javascript
+  function autocomplete_#{@story.id}(event, data, formatted) {
+            //alert("Selected: " + data[1] + "@~@" + formatted);
+       $("#task_#{@story.id}_autocomplete").val(data[1].toUpperCase());    
+  }
   jQuery(function($) {
   $(document).ready(function() {
+    $("#task_#{@story.id}_autocomplete").autocomplete("#{autocomplete_project_story_type_path(@project, @story_type)}", {
+      width: 215,
+      max: 150,
+      scroll: true,
+      scrollHeight: 300
+    });
+    $("#task_#{@story.id}_autocomplete").result(autocomplete_#{@story.id}).next().click(function() {
+      $(this).prev().search();
+    });
     $("#story_#{@story.id}_form")
       .bind('ajax:complete', function() {
         $('#story_#{@story.id}_form').slideUp();

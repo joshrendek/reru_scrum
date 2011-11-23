@@ -8,6 +8,7 @@
 //= require jquery_ujs
 //= require stories
 //= require bootstrap-dropdown
+//= require jquery.autocomplete.pack
 
 
 $(document).ajaxSend(function(e, xhr, options) {
