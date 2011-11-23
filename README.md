@@ -8,9 +8,20 @@ heroku rake db:migrate
 Go visit your new installation, add some Story Types & Statuses and start SCRUMing!
 
 # Customizable Settings
-  Key     : Description
-  title   : Your project's website title and header in the top left corner
-  allow_registration : 0 to turn off registration, delete or set to 1 to allow
+<table>
+  <tr>
+    <td>Key</td>
+    <td>Description</td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>Your project's website title and header in the top left corner</td>
+  </tr>
+  <tr>
+    <td>allow_registration</td>
+    <td>0 to turn off registration, delete or set to 1 to allow</td>
+  </tr>
+</table>
 
 # How to update
     
