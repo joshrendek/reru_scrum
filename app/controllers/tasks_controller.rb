@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   def autocomplete
     @project = Project.find(params[:project_id])
     @story_type = StoryType.find(params[:id])
-    @tasks = Task.where("area LIKE ?", "%"+params[:q]+"%")
+    @tasks = Task.where("area similar to ?", "%"+params[:q]+"%")
     output = ""
     @tasks.each do |t|
       output += "#{t.area}|#{t.area}\n"
