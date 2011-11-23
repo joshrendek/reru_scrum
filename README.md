@@ -10,7 +10,7 @@ Go visit your new installation, add some Story Types & Statuses and start SCRUMi
 == Customizable Settings
   Key     : Description
   title   : Your project's website title and header in the top left corner
-
+  allow_registration : 0 to turn off registration, delete or set to 1 to allow
 
 == How to update
 cd reru_scrum
