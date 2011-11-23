@@ -1,4 +1,6 @@
 ReruScrum::Application.routes.draw do
+  resources :settings
+
   resources :statuses
 
   resources :comments

@@ -1,6 +1,6 @@
 %html
   %head
-    %title ReruScrum
+    %title= settings('title', 'Reru Scrum')
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -9,7 +9,7 @@
       %div{:class => "topbar-inner"}
         %div{:class => "container"}
           %h3
-            = link_to "ReruScrum", "/"
+            = link_to settings('title', 'Reru Scrum'), "/"
           %ul.nav
             %li= link_to "Home", "/"
             - if current_user
@@ -21,6 +21,7 @@
 
               %li= link_to "Story Types", story_types_path
               %li= link_to "Statuses", statuses_path
+              %li= link_to "Settings", settings_path
 
           %div{:id => "auth"}
             %ul

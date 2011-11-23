@@ -7,6 +7,11 @@ heroku rake db:migrate
 
 Go visit your new installation, add some Story Types & Statuses and start SCRUMing!
 
+== Customizable Settings
+  Key     : Description
+  title   : Your project's website title and header in the top left corner
+
+
 == How to update
 cd reru_scrum
 git pull; git push heroku master
