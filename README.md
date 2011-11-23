@@ -10,8 +10,8 @@ Go visit your new installation, add some Story Types & Statuses and start SCRUMi
 # Customizable Settings
 <table>
   <tr>
-    <td>Key</td>
-    <td>Description</td>
+    <td><b>Key</b></td>
+    <td><b>Description</b></td>
   </tr>
   <tr>
     <td>title</td>
