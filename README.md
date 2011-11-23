@@ -1,13 +1,17 @@
 # Getting Started
-git clone git@github.com:bluescripts/reru_scrum.git
-cd reru_scrum
-heroku create
-git push heroku master
-heroku rake db:migrate
+    
+    git clone git@github.com:bluescripts/reru_scrum.git
+    cd reru_scrum
+    heroku create
+    git push heroku master
+    heroku rake db:migrate
 
 Go visit your new installation, add some Story Types & Statuses and start SCRUMing!
 
 # Customizable Settings
+
+These settings are creatable once you login and visit the "Settings" page
+
 <table>
   <tr>
     <td><b>Key</b></td>
