@@ -15,7 +15,7 @@
         %th 
       %tr
         %td
-          = f.input_field :area
+          = f.input_field :area, :id => "task_#{@story.id}_autocomplete"
         %td
           = f.input_field :description
         %td

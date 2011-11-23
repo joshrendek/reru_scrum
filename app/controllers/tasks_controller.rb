@@ -1,5 +1,6 @@
 class TasksController < ApplicationController
   layout nil
+
   # GET /tasks
   # GET /tasks.json
   def index

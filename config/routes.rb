@@ -15,6 +15,9 @@ ReruScrum::Application.routes.draw do
     resources :story_types do
        resources :stories do
          resources :tasks do
+           collection do 
+            get 'autocomplete'
+           end
            resources :comments
          end
        end
